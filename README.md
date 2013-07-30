@@ -20,6 +20,17 @@ scheduled: false
 
 This document will be rendered out even though it's date is in the future.
 
+If your ```defaultScheduling``` configuration setting is ```false``` below, you can use the same meta keyword to specify that a particular file should be scheduled, i.e.
+
+```
+---
+date: '01 Jan 2259 00:00'
+scheduled: true
+---
+```
+
+The document will not be rendered until after midnight on the 1st January 2259.
+
 **NOTE:** The default is that files will not be scheduled in development so that you can preview your output files, you can change this in the configuration below.
 
 ## Configuration
@@ -35,6 +46,10 @@ plugins:
 		# Schedule files in development environment, default: false.
 		devScheduling: false
 ```
+
+### Automatic scheduling on your deployed server
+
+This plugin is probably of most use when used in combination with DocPad's ```regenerateEvery``` setting, allowing you to schedule your content and have it published automatically on the next regeneration after the document's date.
 
 ## History
 You can discover the history inside the `History.md` file

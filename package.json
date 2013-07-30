@@ -1,0 +1,37 @@
+{
+	"name": "docpad-plugin-scheduling",
+	"version": "2.0.0",
+	"description": "DocPad plugin that adds the ability to schedule content to be published in the future",
+	"homepage": "https://github.com/miltbaker/docpad-plugin-scheduling",
+	"keywords": [
+		"docpad",
+		"docpad-plugin",
+		"scheduling",
+		"future"
+	],
+	"author": "Jon Baker <jon@gotripod.com> (http://www.gotripod.com)",
+	"maintainers": [
+		"Jon Baker <jon@gotripod.com> (http://github.com/miletbaker)"
+	],
+	"contributors": [
+	],
+	"bugs": {
+		"url": "https://github.com/miletbaker/docpad-plugin-scheduling/issues"
+	},
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/miletbaker/docpad-plugin-scheduling.git"
+	},
+	"engines" : {
+		"node": ">=0.8",
+		"docpad": ">=6"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"coffee-script": "~1.6.2"
+	},
+	"main": "./out/scheduling.plugin.js",
+	"scripts": {
+		"test": "node ./out/scheduling.test.js"
+	}
+}

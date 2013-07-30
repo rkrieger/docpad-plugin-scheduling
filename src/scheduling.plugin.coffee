@@ -9,7 +9,7 @@ module.exports = (BasePlugin) ->
 
 			defaultScheduling: true
 
-			devScheduling: false
+			devScheduling: true
 
 		# Render
 		# Called per document, for each extension conversion. Used to render one extension to another.

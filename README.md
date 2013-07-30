@@ -31,8 +31,6 @@ scheduled: true
 
 The document will not be rendered until after midnight on the 1st January 2259.
 
-**NOTE:** The default is that files will not be scheduled in development so that you can preview your output files, you can change this in the configuration below.
-
 ## Configuration
 
 There are two main configuration options
@@ -43,8 +41,8 @@ plugins:
 		# Schedule all documents with a date in the future by default, default: true.
 		defaultScheduling: true
 
-		# Schedule files in development environment, default: false.
-		devScheduling: false
+		# Schedule files in development environment, default: true.
+		devScheduling: true
 ```
 
 ### Automatic scheduling on your deployed server

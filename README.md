@@ -3,9 +3,18 @@ Schedules content with a date in the future so that it is not published until th
 
 ## Install
 
+Using Docpad's plugin installer:
+
+```
+docpad install scheduling
+```
+
+Or, the traditional way:
+
 ```
 npm install --save docpad-plugin-scheduling
 ```
+
 
 ## Usage
 

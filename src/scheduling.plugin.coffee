@@ -31,11 +31,12 @@ module.exports = (BasePlugin) ->
 					# Get required data
 					fileScheduled = file.get('scheduled')
 					fileDate = file.get('date')
+					fileExpire = file.get('expire')
 					now = new Date()
 					filePath = file.getFilePath()
 
 					# Scheduled?
-					if ((config.defaultScheduling and not fileScheduled?) or (fileScheduled? and fileScheduled)) and fileDate > now
+					if ((config.defaultScheduling and not fileScheduled?) or (fileScheduled? and fileScheduled)) and ((fileDate > now) or (fileExpire? and (now > fileExpire)))
 						docpad.log 'info', "Ignoring scheduled file: #{filePath}"
 						scheduledFiles.push file
 

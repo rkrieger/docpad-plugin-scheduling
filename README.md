@@ -40,9 +40,9 @@ scheduled: true
 
 The document will not be rendered until after midnight on the 1st January 2259.
 
-### Expiration of documents
+### Expiration of documents (optional)
 
-If for whatever reason you want to 'expire' posts as well (perhaps your New Year's wishes if you expect to not be around to provide an update in the month that follows), you can use the ```expire``` field in your documents. The document will automatically be expired.
+If for whatever reason you want to 'expire' posts as well (perhaps your New Year's wishes if you expect to not be around to provide an update in the month that follows), you can use the (optional) ```expire``` field in your documents. The document will then automatically be expired.
 
 ```
 ---

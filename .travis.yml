@@ -8,11 +8,15 @@
 # - the scripts section of the package.json file
 # - the .travis.yml file
 language: node_js
-before_script: "./node_modules/.bin/cake test-setup"
+install: "npm install -g npm@1 && npm install coffee-script && npm install && ./node_modules/.bin/cake install"
+before_script: "./node_modules/.bin/cake compile"
 script: "npm test"
 node_js:
   - "0.8"
   - "0.10"
+cache:
+  directories:
+  - node_modules
 notifications:
   email:
     - secure: "KK7eOIjR1WPBAae7klW67TZZh4ti+bBIPDqlsvzFnYg4x1Kkew0lefWPrfnGU7mrGJDOSe8Pu0PSBCkwuq31al8YRO/clewJ5U1Nm35SSiZO/g30IObY9nffvtsvWXRicW2PIGWbAgR8sRvjiW5tTXClcup5c7rCcbZ5mM2njB8="

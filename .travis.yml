@@ -14,9 +14,5 @@ node_js:
   - "0.8"
   - "0.10"
 notifications:
-  irc:
-    - "irc.freenode.org#bevry-dev"
-    - "irc.freenode.org#docpad-dev"
   email:
-    recipients:
-      - travisci@bevry.me
+    - secure: "KK7eOIjR1WPBAae7klW67TZZh4ti+bBIPDqlsvzFnYg4x1Kkew0lefWPrfnGU7mrGJDOSe8Pu0PSBCkwuq31al8YRO/clewJ5U1Nm35SSiZO/g30IObY9nffvtsvWXRicW2PIGWbAgR8sRvjiW5tTXClcup5c7rCcbZ5mM2njB8="

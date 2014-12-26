@@ -40,6 +40,20 @@ scheduled: true
 
 The document will not be rendered until after midnight on the 1st January 2259.
 
+### Expiration of documents
+
+If for whatever reason you want to 'expire' posts as well (perhaps your New Year's wishes if you expect to not be around to provide an update in the month that follows), you can use the ```expire``` field in your documents. The document will automatically be expired.
+
+```
+---
+date: '01 Jan 2016 00:00'
+expire: '01 Feb 2016 00:00'
+scheduled: true
+---
+```
+
+
+
 ## Configuration
 
 There are two main configuration options
